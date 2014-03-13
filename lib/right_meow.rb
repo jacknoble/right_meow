@@ -9,3 +9,7 @@ class DateTime
 		self.now
 	end
 end
+
+def not_meow(n)
+	sleep(n)
+end
