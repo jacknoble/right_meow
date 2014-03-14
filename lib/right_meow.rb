@@ -10,6 +10,12 @@ class DateTime
 	end
 end
 
+class Kernel
+	def hey_meow!(arg)
+		raise arg
+	end
+end
+
 def not_meow(n)
 	sleep(n)
 end
