@@ -10,7 +10,7 @@ describe 'right_meow' do
 
     it "does not match at a different instant" do
       meow = Time.meow
-      sleep(2)
+      sleep(1)
       now = Time.now
       expect(now.to_i).not_to eq(meow.to_i)
     end
@@ -25,7 +25,7 @@ describe 'right_meow' do
 
     it "does not match at a different instant" do
       meow = DateTime.meow
-      sleep(2)
+      sleep(1)
       now = DateTime.now
       expect(now.to_time.to_i).not_to eq(meow.to_time.to_i)
     end
@@ -34,9 +34,9 @@ describe 'right_meow' do
   describe "#not_meow" do
     it "sleeps n seconds" do
       pre = Time.now
-      not_meow(2)
+      not_meow(1)
       post = Time.now
-      expect(post.to_i).to eq(pre.to_i + 2)
+      expect(post.to_i).to eq(pre.to_i + 1)
     end
   end
 end
