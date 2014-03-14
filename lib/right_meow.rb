@@ -10,12 +10,7 @@ class DateTime
 	end
 end
 
-class Kernel
-	def hey_meow!(arg)
-		raise arg
-	end
-end
+alias hey_meow! raise
 
-def not_meow(n)
-	sleep(n)
-end
+alias not_meow sleep
+
