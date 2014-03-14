@@ -9,4 +9,5 @@ Gem::Specification.new do |s|
   s.files       = ["lib/right_meow.rb"]
   s.homepage    = 'https://github.com/jacknoble/right_meow'
   s.license     = 'MIT'
+  s.add_development_dependency "rspec"
 end
