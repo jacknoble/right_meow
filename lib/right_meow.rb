@@ -1,3 +1,5 @@
+require 'date'
+
 class Time
 	def self.meow
 		self.now
